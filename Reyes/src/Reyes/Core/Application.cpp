@@ -8,10 +8,12 @@
 
 #include <GLFW/glfw3.h>
 
-namespace Reyes {
+namespace Reyes
+{
 	Application *Application::s_Instance = nullptr;
 
-	Application::Application() {
+	Application::Application()
+	{
 		REY_CORE_ASSERT(!s_Instance, "Application already exists");
 		s_Instance = this;
 
@@ -23,15 +25,18 @@ namespace Reyes {
 		m_ImGuiLayer = new ImGuiLayer;
 		PushOverlay(m_ImGuiLayer);
 
+		Renderer::SetViewport(GetWindow().GetSize());
 		Renderer::SetClearColor({1.f, 0.f, 1.f, 1.f});
 	}
 
 	Application::~Application() = default;
 
-	void Application::Run() {
-		auto lastTime = (float) glfwGetTime();
-		while (m_Running) {
-			auto time = (float) glfwGetTime();
+	void Application::Run()
+	{
+		auto lastTime = (float)glfwGetTime();
+		while (m_Running)
+		{
+			auto time = (float)glfwGetTime();
 
 			Render();
 
@@ -48,19 +53,29 @@ namespace Reyes {
 		}
 	}
 
-	void Application::OnEvent(Event &e) {
+	void Application::OnEvent(Event &e)
+	{
 		EventDispatcher dispatcher(e);
 		dispatcher.Dispatch<WindowCloseEvent>(REY_BIND_EVENT_FN(Application::OnWindowClosed));
+		dispatcher.Dispatch<WindowResizeEvent>(REY_BIND_EVENT_FN(Application::OnWindowResized));
 
-		for (auto it = m_LayerStack.end(); it != m_LayerStack.begin();) {
+		for (auto it = m_LayerStack.end(); it != m_LayerStack.begin();)
+		{
 			(*--it)->OnEvent(e);
 			if (e.Handled)
 				break;
 		}
 	}
 
-	bool Application::OnWindowClosed(WindowCloseEvent &e) {
+	bool Application::OnWindowClosed(WindowCloseEvent &e)
+	{
 		m_Running = false;
-		return true;
+		return false;
 	}
-}
+	
+	bool Application::OnWindowResized(WindowResizeEvent &e)
+	{
+		Renderer::SetViewport(e.GetSize());
+		return false;
+	}
+} // namespace Reyes

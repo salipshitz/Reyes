@@ -69,12 +69,13 @@ public:
 
 		m_Transform = std::make_shared<Reyes::Transform>("Squar", glm::vec3(), glm::vec3(), glm::vec3(16, 16, 1));
 
-		m_Camera = std::make_shared<Reyes::OrthographicCamera>("Camera");
+		glm::vec2 windowSize = Application::Get().GetWindow().GetSize();
+		m_Camera = std::make_shared<Reyes::OrthographicCamera>("Camera", 0, windowSize.x, 0, windowSize.y);
 
 		m_Shader->Bind();
 		std::dynamic_pointer_cast<OpenGLShader>(m_Shader)->SetUniform("u_Texture", 0);
 
-		m_Atlas = AtlasTexture::Create("assets/fonts/Courier.ttf", 50);
+		m_Atlas = AtlasTexture::Create("assets/fonts/opensans.ttf", 50);
 
 		m_TextShader = Shader::Create("assets/shaders/Text.glsl");
 		m_TextShader->Bind();
@@ -95,10 +96,11 @@ public:
 		Reyes::EventDispatcher dispatcher(event);
 		dispatcher.Dispatch<Reyes::WindowResizeEvent>(REY_BIND_EVENT_FN(ExampleLayer::OnWindowResize));
 	}
-	
+
 	bool OnWindowResize(Reyes::WindowResizeEvent &event)
 	{
 		m_Text->Resize(event.GetSize().x);
+		m_Camera->Resize(0, event.GetSize().x, 0, event.GetSize().y);
 
 		return false;
 	}
@@ -123,15 +125,10 @@ public:
 
 		// m_Texture->Bind();
 		// Reyes::Renderer::Submit(m_VertexArray, m_Transform, m_Shader);
-
-		Reyes::Renderer::EndScene();
-
-		Reyes::Renderer::BeginUI(m_Camera);
-
 		m_Text->GetFontAtlas()->Bind();
 		Reyes::Renderer::Submit(m_Text->GetVertexArray(), m_Text->GetTransform(), m_TextShader);
 
-		Reyes::Renderer::EndUI();
+		Reyes::Renderer::EndScene();
 	}
 
 private:

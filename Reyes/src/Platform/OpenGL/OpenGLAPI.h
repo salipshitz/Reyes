@@ -2,7 +2,6 @@
 
 #include <Reyes/Core/Core.h>
 #include <Reyes/RenderAPI/API.h>
-#include <glm/vec4.hpp>
 #include <Reyes/RenderAPI/VertexArray.h>
 
 namespace Reyes::RenderAPI {
@@ -13,5 +12,6 @@ namespace Reyes::RenderAPI {
 		void SetClearColor(const glm::vec4 &color) override;
 		void Clear() override;
 		void DrawIndexed(const Ref<VertexArray> &vertexArray) override;
+		void SetViewport(glm::vec2 size);
 	};
 }

@@ -7,16 +7,20 @@
 #include <Reyes/Events/WindowEvent.h>
 #include <Reyes/RenderAPI/Context.h>
 
-namespace Reyes {
-	struct WindowProperties {
+namespace Reyes
+{
+	struct WindowProperties
+	{
 		std::string Title;
 		glm::vec2 Size;
 
 		explicit WindowProperties(std::string title = "Reyes Engine", glm::vec2 size = {1280, 720})
-				: Title(std::move(title)), Size(size) {}
+			: Title(std::move(title)), Size(size) {}
 	};
 
-	class  Window {
+	class Window
+	{
+		friend class Application;
 	public:
 		using EventCallbackFn = std::function<void(Event &)>;
 
@@ -34,7 +38,8 @@ namespace Reyes {
 		[[nodiscard]] virtual void *GetNativeWindow() const = 0;
 
 		static Window *Create(const WindowProperties &props = WindowProperties());
+
 	protected:
 		Scope<RenderAPI::Context> m_Context;
 	};
-}
+} // namespace Reyes

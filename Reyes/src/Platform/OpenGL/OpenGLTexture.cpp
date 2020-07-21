@@ -15,7 +15,7 @@ namespace Reyes::RenderAPI
 {
 	OpenGLTexture2D::OpenGLTexture2D(const std::string &path, bool minNearest, bool magNearest) : m_Path(path)
 	{
-		stbi_set_flip_vertically_on_load(1);
+		// stbi_set_flip_vertically_on_load(1);
 
 		int width, height, channels;
 		REY_CORE_TRACE("CWD: {}", std::filesystem::current_path());
@@ -145,9 +145,9 @@ namespace Reyes::RenderAPI
 		stbtt_GetPackedQuad(cdata, m_AtlasSize, m_AtlasSize, c - ' ', offX, offY, &quad, 1);
 
 		return {
-			quad.x0, -quad.y0, 0, quad.s0, quad.t0,
-			quad.x0, -quad.y1, 0, quad.s0, quad.t1,
-			quad.x1, -quad.y1, 0, quad.s1, quad.t1,
-			quad.x1, -quad.y0, 0, quad.s1, quad.t0};
+			quad.x0, quad.y0, 0, quad.s0, quad.t0,
+			quad.x0, quad.y1, 0, quad.s0, quad.t1,
+			quad.x1, quad.y1, 0, quad.s1, quad.t1,
+			quad.x1, quad.y0, 0, quad.s1, quad.t0};
 	}
 } // namespace Reyes::RenderAPI

@@ -19,9 +19,6 @@ namespace Reyes {
 	public:
 		static void Init();
 
-		static void BeginUI(Ref<Camera> camera);
-		static void EndUI();
-
 		static void BeginScene(Ref<Camera> camera);
 		static void EndScene();
 
@@ -30,6 +27,8 @@ namespace Reyes {
 
 		inline static void SetClearColor(const glm::vec4 &color) { s_API->SetClearColor(color); }
 		inline static void Clear() { s_API->Clear(); }
+
+		static void SetViewport(glm::vec2 size);
 
 	private:
 		static RenderAPI::API *s_API;

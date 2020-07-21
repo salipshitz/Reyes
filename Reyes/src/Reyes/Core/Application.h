@@ -6,12 +6,15 @@
 #include "Core.h"
 #include "LayerStack.h"
 
-namespace Reyes {
+namespace Reyes
+{
 	class Window;
 	class WindowCloseEvent;
+	class WindowResizeEvent;
 	class KeyEvent;
 
-	class  Application {
+	class Application
+	{
 	public:
 		inline static Application &Get() { return *s_Instance; }
 
@@ -33,6 +36,7 @@ namespace Reyes {
 		static Application *s_Instance;
 
 		bool OnWindowClosed(WindowCloseEvent &e);
+		bool OnWindowResized(WindowResizeEvent &e);
 
 		Ref<Window> m_Window;
 		ImGuiLayer *m_ImGuiLayer;
@@ -42,4 +46,4 @@ namespace Reyes {
 
 	// Define in CLIENT
 	Application *CreateApplication();
-}
+} // namespace Reyes

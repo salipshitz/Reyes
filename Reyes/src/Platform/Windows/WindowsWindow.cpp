@@ -42,71 +42,71 @@ namespace Reyes {
 		SetVSync(true);
 
 		glfwSetWindowSizeCallback(m_Window, [](GLFWwindow *window, int width, int height) {
-			WindowData &data = *(WindowData *) glfwGetWindowUserPointer(window);
-			data.Size = {width, height};
+			WindowData *data = (WindowData *) glfwGetWindowUserPointer(window);
+			data->Size = {width, height};
 			WindowResizeEvent event({width, height});
-			data.EventCallback(event);
+			data->EventCallback(event);
 		});
 
 		glfwSetWindowCloseCallback(m_Window, [](GLFWwindow *window) {
-			WindowData &data = *(WindowData *) glfwGetWindowUserPointer(window);
+			WindowData *data = (WindowData *) glfwGetWindowUserPointer(window);
 			WindowCloseEvent event;
-			data.EventCallback(event);
+			data->EventCallback(event);
 		});
 
 		glfwSetKeyCallback(m_Window, [](GLFWwindow *window, int key, int scancode, int action, int mods) {
-			WindowData &data = *(WindowData *) glfwGetWindowUserPointer(window);
+			WindowData *data = (WindowData *) glfwGetWindowUserPointer(window);
 			switch (action) {
 				case GLFW_PRESS: {
 					KeyDownEvent event(REY_KEY_FROM_GLFW(key));
-					data.EventCallback(event);
+					data->EventCallback(event);
 					break;
 				}
 				case GLFW_RELEASE: {
 					KeyUpEvent event(REY_KEY_FROM_GLFW(key));
-					data.EventCallback(event);
+					data->EventCallback(event);
 					break;
 				}
 				case GLFW_REPEAT: {
 					KeyRepeatEvent event(REY_KEY_FROM_GLFW(key), 1);
-					data.EventCallback(event);
+					data->EventCallback(event);
 					break;
 				}
 			}
 		});
 
 		glfwSetCharCallback(m_Window, [](GLFWwindow *window, unsigned int key) {
-			WindowData &data = *(WindowData *) glfwGetWindowUserPointer(window);
+			WindowData *data = (WindowData *) glfwGetWindowUserPointer(window);
 			KeyTypeEvent event(REY_KEY_FROM_GLFW(key));
-			data.EventCallback(event);
+			data->EventCallback(event);
 		});
 
 		glfwSetMouseButtonCallback(m_Window, [](GLFWwindow *window, int button, int action, int mods) {
-			WindowData &data = *(WindowData *) glfwGetWindowUserPointer(window);
+			WindowData *data = (WindowData *) glfwGetWindowUserPointer(window);
 			switch (action) {
 				case GLFW_PRESS: {
 					MouseDownEvent event(REY_MB_FROM_GLFW(button));
-					data.EventCallback(event);
+					data->EventCallback(event);
 					break;
 				}
 				case GLFW_RELEASE: {
 					MouseUpEvent event(REY_MB_FROM_GLFW(button));
-					data.EventCallback(event);
+					data->EventCallback(event);
 					break;
 				}
 			}
 		});
 
 		glfwSetScrollCallback(m_Window, [](GLFWwindow *window, double xOffset, double yOffset) {
-			WindowData &data = *(WindowData *) glfwGetWindowUserPointer(window);
+			WindowData *data = (WindowData *) glfwGetWindowUserPointer(window);
 			MouseScrollEvent event(xOffset, yOffset);
-			data.EventCallback(event);
+			data->EventCallback(event);
 		});
 
 		glfwSetCursorPosCallback(m_Window, [](GLFWwindow *window, double x, double y) {
-			WindowData &data = *(WindowData *) glfwGetWindowUserPointer(window);
+			WindowData *data = (WindowData *) glfwGetWindowUserPointer(window);
 			MouseMoveEvent event(x, y);
-			data.EventCallback(event);
+			data->EventCallback(event);
 		});
 	}
 

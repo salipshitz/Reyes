@@ -30,15 +30,6 @@ namespace Reyes
 		}
 	}
 
-	void Renderer::BeginUI(Ref<Camera> camera)
-	{
-		s_VPMatrix = camera->GetUIMatrix();
-	}
-
-	void Renderer::EndUI()
-	{
-	}
-
 	void Renderer::BeginScene(Ref<Camera> camera)
 	{
 		s_VPMatrix = camera->GetViewProjectionMatrix();
@@ -59,5 +50,10 @@ namespace Reyes
 
 		vertexArray->Bind();
 		s_API->DrawIndexed(vertexArray);
+	}
+
+	void Renderer::SetViewport(glm::vec2 size)
+	{
+		s_API->SetViewport(size);
 	}
 } // namespace Reyes

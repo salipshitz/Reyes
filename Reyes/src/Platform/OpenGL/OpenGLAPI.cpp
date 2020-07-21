@@ -5,38 +5,51 @@
 
 #include <Reyes/RenderAPI/Buffer.h>
 
-#define GL_CALL(func) {func REY_CORE_LOG(#func+" at {}", __LINE__)}
+#define GL_CALL(func)                                 \
+	{                                                 \
+		func REY_CORE_LOG(#func + " at {}", __LINE__) \
+	}
 
-namespace Reyes::RenderAPI {
-	OpenGLAPI::OpenGLAPI() {
+namespace Reyes::RenderAPI
+{
+	OpenGLAPI::OpenGLAPI()
+	{
 #ifdef REY_DEBUG
 		glEnable(GL_DEBUG_OUTPUT);
 		glDebugMessageCallback(
-				[](unsigned int source, unsigned int type, unsigned int id, unsigned int severity, int length,
-				   const char *message, const void *userParam) {
-					if (type == GL_DEBUG_TYPE_OTHER) // Ignore NVIDIA warning about video memory
-						return;
-					if (type == GL_DEBUG_TYPE_ERROR)
-						REY_CORE_ERROR("OpenGL Error (Type: {}): {}", type, message);
-					else
-						REY_CORE_WARN("OpenGL Warning (Type: {}): {}", type, message);
-				}, nullptr);
+			[](unsigned int source, unsigned int type, unsigned int id, unsigned int severity, int length,
+			   const char *message, const void *userParam) {
+				if (type == GL_DEBUG_TYPE_OTHER) // Ignore NVIDIA warning about video memory
+					return;
+				if (type == GL_DEBUG_TYPE_ERROR)
+					REY_CORE_ERROR("OpenGL Error (Type: {}): {}", type, message);
+				else
+					REY_CORE_WARN("OpenGL Warning (Type: {}): {}", type, message);
+			},
+			nullptr);
 #endif
 		glEnable(GL_BLEND);
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 		glDisable(GL_CULL_FACE);
 	}
 
-	void OpenGLAPI::SetClearColor(const glm::vec4 &color) {
+	void OpenGLAPI::SetClearColor(const glm::vec4 &color)
+	{
 		glClearColor(color.r, color.g, color.b, color.a);
 	}
 
-	void OpenGLAPI::Clear() {
+	void OpenGLAPI::Clear()
+	{
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	}
 
-	void OpenGLAPI::DrawIndexed(const Ref<VertexArray> &vertexArray) {
-		// glPointSize(5.f);
+	void OpenGLAPI::DrawIndexed(const Ref<VertexArray> &vertexArray)
+	{
 		glDrawElements(GL_TRIANGLES, vertexArray->GetIndexBuffer()->GetCount(), GL_UNSIGNED_INT, nullptr);
 	}
-}
+
+	void OpenGLAPI::SetViewport(glm::vec2 size)
+	{
+		glViewport(0, 0, size.x, size.y);
+	}
+} // namespace Reyes::RenderAPI

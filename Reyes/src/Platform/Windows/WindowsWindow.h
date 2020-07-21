@@ -4,8 +4,10 @@
 
 struct GLFWwindow;
 
-namespace Reyes {
-	class WindowsWindow : public Window {
+namespace Reyes
+{
+	class WindowsWindow : public Window
+	{
 	public:
 		explicit WindowsWindow(const WindowProperties &props);
 		~WindowsWindow() override;
@@ -24,14 +26,13 @@ namespace Reyes {
 	private:
 		GLFWwindow *m_Window;
 
-		struct WindowData {
+		struct WindowData
+		{
 			std::string Title;
 			glm::vec2 Size;
 			bool VSync;
 
 			EventCallbackFn EventCallback;
-		};
-
-		WindowData m_Data;
+		} m_Data;
 	};
-}
+} // namespace Reyes
