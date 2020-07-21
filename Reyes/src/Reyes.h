@@ -1,14 +1,24 @@
 #pragma once
 
-#include "Reyes/Application.h"
+// Core
+#include <Reyes/Core/Application.h>
+#include <Reyes/Core/Layer.h>
+#include <Reyes/Core/Log.h>
 
-#include "Reyes/Layer.h"
-#include "Reyes/Log.h"
+// Input
+#include <Reyes/Core/Input.h>
+#include <Reyes/Core/MouseButtonCodes.h>
+#include <Reyes/Core/KeyCodes.h>
 
-#include "Reyes/Input.h"
-#include "Reyes/MouseButtonCodes.h"
-#include "Reyes/KeyCodes.h"
+// Rendering
+#include <Reyes/Core/Renderer.h>
+#include <Reyes/RenderAPI/Buffer.h>
+#include <Reyes/RenderAPI/VertexArray.h>
+#include <Reyes/RenderAPI/Shader.h>
+#include <Reyes/RenderAPI/Texture.h>
 
-#include "Reyes/ImGui/ImGuiLayer.h"
+// ImGui
+#include <Reyes/ImGui/ImGuiLayer.h>
 
-#include "Reyes/EntryPoint.h"
+// Entry Point
+#include <Reyes/Core/EntryPoint.h>

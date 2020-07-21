@@ -3,7 +3,7 @@
 #include "Event.h"
 
 namespace Reyes {
-	class REYES_API MouseButtonEvent : public Event {
+	class  MouseButtonEvent : public Event {
 	public:
 		[[nodiscard]] inline std::string ToString() const override {
 			return std::string(GetName()) + ": Mouse Button = " + std::to_string(GetMouseButton());
@@ -19,7 +19,7 @@ namespace Reyes {
 		explicit MouseButtonEvent(int mouseButton) : m_MouseButton(mouseButton) {}
 	};
 
-	class REYES_API MouseDownEvent : public MouseButtonEvent {
+	class  MouseDownEvent : public MouseButtonEvent {
 	public:
 		explicit MouseDownEvent(int mouseButton) : MouseButtonEvent(mouseButton) {}
 
@@ -28,7 +28,7 @@ namespace Reyes {
 		[[nodiscard]] inline const char *GetName() const override { return "MouseDownEvent"; }
 	};
 
-	class REYES_API MouseUpEvent : public MouseButtonEvent {
+	class  MouseUpEvent : public MouseButtonEvent {
 	public:
 		explicit MouseUpEvent(int mouseButton) : MouseButtonEvent(mouseButton) {}
 
@@ -38,7 +38,7 @@ namespace Reyes {
 
 	};
 
-	class REYES_API MouseMotionEvent : public Event {
+	class  MouseMotionEvent : public Event {
 	public:
 		[[nodiscard]] inline float GetX() const { return m_MouseX; }
 
@@ -56,7 +56,7 @@ namespace Reyes {
 		MouseMotionEvent(float x, float y) : m_MouseX(x), m_MouseY(y) {}
 	};
 
-	class REYES_API MouseMoveEvent : public MouseMotionEvent {
+	class  MouseMoveEvent : public MouseMotionEvent {
 	public:
 		MouseMoveEvent(float x, float y) : MouseMotionEvent(x, y) {}
 
@@ -65,7 +65,7 @@ namespace Reyes {
 		inline const char *GetName() const override { return "MouseMoveEvent"; }
 	};
 
-	class REYES_API MouseDragEvent : MouseMotionEvent {
+	class  MouseDragEvent : MouseMotionEvent {
 	public:
 		MouseDragEvent(float x, float y) : MouseMotionEvent(x, y) {}
 
@@ -74,7 +74,7 @@ namespace Reyes {
 		[[nodiscard]] inline const char *GetName() const override { return "MouseDragEvent"; }
 	};
 
-	class REYES_API MouseScrollEvent : public Event {
+	class  MouseScrollEvent : public Event {
 	public:
 		MouseScrollEvent(float xOffset, float yOffset) : m_XOffset(xOffset), m_YOffset(yOffset) {}
 

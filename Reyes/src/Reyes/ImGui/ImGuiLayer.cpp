@@ -1,3 +1,4 @@
+#include <pch>
 #include "ImGuiLayer.h"
 
 #include <imgui.h>
@@ -6,8 +7,8 @@
 
 #include <GLFW/glfw3.h>
 
-#include <Reyes/Application.h>
-#include <Reyes/Window.h>
+#include <Reyes/Core/Application.h>
+#include <Reyes/Core/Window.h>
 
 #include <Reyes/Events/MouseEvent.h>
 #include <Reyes/Events/KeyEvent.h>
@@ -65,7 +66,7 @@ namespace Reyes {
 	void ImGuiLayer::End() {
 		ImGuiIO &io = ImGui::GetIO();
 		Application &app = Application::Get();
-		io.DisplaySize = ImVec2(app.GetWindow().GetWidth(), app.GetWindow().GetHeight());
+		io.DisplaySize = ImVec2(app.GetWindow().GetSize().x, app.GetWindow().GetSize().y);
 
 		ImGui::Render();
 		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());

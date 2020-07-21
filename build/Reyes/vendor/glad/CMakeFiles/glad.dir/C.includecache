@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../Reyes/vendor/glad/include/KHR/khrplatform.h
+stdint.h
+-
+inttypes.h
+-
+stdint.h
+-
+
+../Reyes/vendor/glad/include/glad/glad.h
+KHR/khrplatform.h
+-
+
+C:/Users/geger/CLionProjects/Reyes/Reyes/vendor/glad/src/glad.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+glad/glad.h
+-
+windows.h
+-
+winapifamily.h
+-
+dlfcn.h
+-
+
+C:/Users/geger/CLionProjects/Reyes/build/Reyes/vendor/glad/CMakeFiles/glad.dir/Unity/unity_0_c.c
+C:/Users/geger/CLionProjects/Reyes/Reyes/vendor/glad/src/glad.c
+-
+

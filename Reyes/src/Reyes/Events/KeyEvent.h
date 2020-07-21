@@ -3,7 +3,7 @@
 #include "Event.h"
 
 namespace Reyes {
-	class REYES_API KeyEvent : public Event {
+	class  KeyEvent : public Event {
 	public:
 		[[nodiscard]] inline int GetKeyCode() const { return m_KeyCode; }
 
@@ -19,7 +19,7 @@ namespace Reyes {
 		int m_KeyCode;
 	};
 
-	class REYES_API KeyDownEvent : public KeyEvent {
+	class  KeyDownEvent : public KeyEvent {
 	public:
 		explicit KeyDownEvent(int keycode) : KeyEvent(keycode) {}
 
@@ -28,7 +28,7 @@ namespace Reyes {
 		[[nodiscard]] inline const char *GetName() const override { return "KeyDownEvent"; }
 	};
 
-	class REYES_API KeyRepeatEvent : public KeyEvent {
+	class  KeyRepeatEvent : public KeyEvent {
 	public:
 		KeyRepeatEvent(int keycode, int repeatCount) : KeyEvent(keycode), m_RepeatCount(repeatCount) {}
 
@@ -44,7 +44,7 @@ namespace Reyes {
 		int m_RepeatCount;
 	};
 
-	class REYES_API KeyUpEvent : public KeyEvent {
+	class  KeyUpEvent : public KeyEvent {
 	public:
 		explicit KeyUpEvent(int keycode) : KeyEvent(keycode) {}
 
@@ -54,7 +54,7 @@ namespace Reyes {
 
 	};
 
-	class REYES_API KeyTypeEvent : public KeyEvent {
+	class  KeyTypeEvent : public KeyEvent {
 	public:
 		explicit KeyTypeEvent(int keycode) : KeyEvent(keycode) {}
 

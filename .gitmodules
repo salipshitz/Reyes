@@ -1,12 +1,15 @@
 [submodule "Reyes\\vendor\\spdlog"]
 	path = Reyes\\vendor\\spdlog
 	url = https://github.com/gabime/spdlog
-[submodule "Reyes\\vendor\\glfw"]
-	path = Reyes\\vendor\\glfw
-	url = https://github.com/glfw/glfw
 [submodule "Reyes\\vendor\\glm"]
 	path = Reyes\\vendor\\glm
 	url = https://github.com/g-truc/glm
 [submodule "Reyes/vendor/imgui"]
 	path = Reyes/vendor/imgui
 	url = https://github.com/ocornut/imgui
+[submodule "Reyes\\vendor\\glfw"]
+	path = Reyes\\vendor\\glfw
+	url = https://github.com/glfw/glfw
+[submodule "Reyes\\vendor\\libdrawtext"]
+	path = Reyes\\vendor\\libdrawtext
+	url = https://github.com/jtsiomb/libdrawtext

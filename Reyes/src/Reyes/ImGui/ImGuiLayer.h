@@ -1,6 +1,6 @@
 #pragma once
 
-#include <Reyes/Layer.h>
+#include <Reyes/Core/Layer.h>
 
 namespace Reyes {
 	class ImGuiLayer : public Layer {
@@ -14,7 +14,5 @@ namespace Reyes {
 
 		void Begin();
 		void End();
-
-		float m_Time = 0.f;
 	};
 }

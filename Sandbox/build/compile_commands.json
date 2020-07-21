@@ -1,0 +1,133 @@
+[
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -TP -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DREY_DEBUG -DREY_WINDOWS -I..\\..\\Reyes\\src -I..\\..\\Reyes\\vendor -I..\\..\\Reyes\\vendor\\spdlog\\include -I..\\..\\Reyes\\vendor\\glm -I..\\..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include  /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd   -std:c++17 /FoCMakeFiles\\Sandbox.dir\\src\\SandboxApp.cpp.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\src\\SandboxApp.cpp",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/src/SandboxApp.cpp"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -TP -DGLFW_INCLUDE_NONE -DREY_DEBUG -DREY_EXPORT_LIBRARY -DREY_WINDOWS -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb  /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -std:c++17 /YcC:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/cmake_pch.hxx /FpC:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/./cmake_pch.cxx.pch /FIC:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/cmake_pch.hxx /FoReyes\\CMakeFiles\\Reyes.dir\\cmake_pch.cxx.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\build\\Reyes\\CMakeFiles\\Reyes.dir\\cmake_pch.cxx",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/cmake_pch.cxx"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -TP -DGLFW_INCLUDE_NONE -DREY_DEBUG -DREY_EXPORT_LIBRARY -DREY_WINDOWS -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb  /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -std:c++17 /YuC:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/cmake_pch.hxx /FpC:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/./cmake_pch.cxx.pch /FIC:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/cmake_pch.hxx /FoReyes\\CMakeFiles\\Reyes.dir\\Unity\\unity_2_cxx.cxx.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\build\\Reyes\\CMakeFiles\\Reyes.dir\\Unity\\unity_2_cxx.cxx",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/Unity/unity_2_cxx.cxx"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -TP -DGLFW_INCLUDE_NONE -DREY_DEBUG -DREY_EXPORT_LIBRARY -DREY_WINDOWS -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb  /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -std:c++17 /YuC:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/cmake_pch.hxx /FpC:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/./cmake_pch.cxx.pch /FIC:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/cmake_pch.hxx /FoReyes\\CMakeFiles\\Reyes.dir\\Unity\\unity_1_cxx.cxx.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\build\\Reyes\\CMakeFiles\\Reyes.dir\\Unity\\unity_1_cxx.cxx",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/Unity/unity_1_cxx.cxx"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -TP -DGLFW_INCLUDE_NONE -DREY_DEBUG -DREY_EXPORT_LIBRARY -DREY_WINDOWS -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb  /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -std:c++17 /YuC:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/cmake_pch.hxx /FpC:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/./cmake_pch.cxx.pch /FIC:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/cmake_pch.hxx /FoReyes\\CMakeFiles\\Reyes.dir\\Unity\\unity_0_cxx.cxx.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\build\\Reyes\\CMakeFiles\\Reyes.dir\\Unity\\unity_0_cxx.cxx",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/CMakeFiles/Reyes.dir/Unity/unity_0_cxx.cxx"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb -I..\\Reyes\\vendor\\glfw\\src -IReyes\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -Wall -Wdeclaration-after-statement /FoReyes\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\context.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\Reyes\\vendor\\glfw\\src\\context.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/Reyes/vendor/glfw/src/context.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb -I..\\Reyes\\vendor\\glfw\\src -IReyes\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -Wall -Wdeclaration-after-statement /FoReyes\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\init.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\Reyes\\vendor\\glfw\\src\\init.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/Reyes/vendor/glfw/src/init.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb -I..\\Reyes\\vendor\\glfw\\src -IReyes\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -Wall -Wdeclaration-after-statement /FoReyes\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\input.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\Reyes\\vendor\\glfw\\src\\input.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/Reyes/vendor/glfw/src/input.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb -I..\\Reyes\\vendor\\glfw\\src -IReyes\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -Wall -Wdeclaration-after-statement /FoReyes\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\monitor.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\Reyes\\vendor\\glfw\\src\\monitor.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/Reyes/vendor/glfw/src/monitor.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb -I..\\Reyes\\vendor\\glfw\\src -IReyes\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -Wall -Wdeclaration-after-statement /FoReyes\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\vulkan.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\Reyes\\vendor\\glfw\\src\\vulkan.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/Reyes/vendor/glfw/src/vulkan.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb -I..\\Reyes\\vendor\\glfw\\src -IReyes\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -Wall -Wdeclaration-after-statement /FoReyes\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\window.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\Reyes\\vendor\\glfw\\src\\window.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/Reyes/vendor/glfw/src/window.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb -I..\\Reyes\\vendor\\glfw\\src -IReyes\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -Wall -Wdeclaration-after-statement /FoReyes\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_init.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\Reyes\\vendor\\glfw\\src\\win32_init.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/Reyes/vendor/glfw/src/win32_init.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb -I..\\Reyes\\vendor\\glfw\\src -IReyes\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -Wall -Wdeclaration-after-statement /FoReyes\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_joystick.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\Reyes\\vendor\\glfw\\src\\win32_joystick.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/Reyes/vendor/glfw/src/win32_joystick.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb -I..\\Reyes\\vendor\\glfw\\src -IReyes\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -Wall -Wdeclaration-after-statement /FoReyes\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_monitor.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\Reyes\\vendor\\glfw\\src\\win32_monitor.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/Reyes/vendor/glfw/src/win32_monitor.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb -I..\\Reyes\\vendor\\glfw\\src -IReyes\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -Wall -Wdeclaration-after-statement /FoReyes\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_time.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\Reyes\\vendor\\glfw\\src\\win32_time.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/Reyes/vendor/glfw/src/win32_time.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb -I..\\Reyes\\vendor\\glfw\\src -IReyes\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -Wall -Wdeclaration-after-statement /FoReyes\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_thread.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\Reyes\\vendor\\glfw\\src\\win32_thread.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/Reyes/vendor/glfw/src/win32_thread.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb -I..\\Reyes\\vendor\\glfw\\src -IReyes\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -Wall -Wdeclaration-after-statement /FoReyes\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\win32_window.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\Reyes\\vendor\\glfw\\src\\win32_window.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/Reyes/vendor/glfw/src/win32_window.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb -I..\\Reyes\\vendor\\glfw\\src -IReyes\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -Wall -Wdeclaration-after-statement /FoReyes\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\wgl_context.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\Reyes\\vendor\\glfw\\src\\wgl_context.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/Reyes/vendor/glfw/src/wgl_context.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb -I..\\Reyes\\vendor\\glfw\\src -IReyes\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -Wall -Wdeclaration-after-statement /FoReyes\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\egl_context.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\Reyes\\vendor\\glfw\\src\\egl_context.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/Reyes/vendor/glfw/src/egl_context.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -D_CRT_SECURE_NO_WARNINGS -D_GLFW_USE_CONFIG_H -D_UNICODE -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb -I..\\Reyes\\vendor\\glfw\\src -IReyes\\vendor\\glfw\\src  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -Wall -Wdeclaration-after-statement /FoReyes\\vendor\\glfw\\src\\CMakeFiles\\glfw.dir\\osmesa_context.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\Reyes\\vendor\\glfw\\src\\osmesa_context.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/Reyes/vendor/glfw/src/osmesa_context.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo  -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb  /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd   /GX /w /FoReyes\\vendor\\glad\\CMakeFiles\\glad.dir\\Unity\\unity_0_c.c.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\build\\Reyes\\vendor\\glad\\CMakeFiles\\glad.dir\\Unity\\unity_0_c.c",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/vendor/glad/CMakeFiles/glad.dir/Unity/unity_0_c.c"
+},
+
+{
+  "directory": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang-cl.exe  /nologo -TP  -I..\\Reyes\\src -I..\\Reyes\\vendor\\glm -I..\\Reyes\\vendor\\spdlog\\include -I..\\Reyes\\vendor\\glfw\\include -I..\\Reyes\\vendor\\glad\\include -I..\\Reyes\\vendor\\imgui -I..\\Reyes\\vendor\\stb  /DWIN32 /D_WINDOWS /GR /EHsc /Zi /Ob0 /Od /RTC1 -MDd   /GX /w -std:c++17 /FoReyes\\vendor\\imgui\\CMakeFiles\\imgui.dir\\Unity\\unity_0_cxx.cxx.obj /FdTARGET_COMPILE_PDB -c C:\\Users\\geger\\CLionProjects\\Reyes\\Sandbox\\build\\Reyes\\vendor\\imgui\\CMakeFiles\\imgui.dir\\Unity\\unity_0_cxx.cxx",
+  "file": "C:/Users/geger/CLionProjects/Reyes/Sandbox/build/Reyes/vendor/imgui/CMakeFiles/imgui.dir/Unity/unity_0_cxx.cxx"
+}
+]

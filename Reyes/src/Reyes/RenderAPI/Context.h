@@ -1,10 +1,10 @@
 #pragma once
 
-#include <Reyes/Core.h>
+#include <Reyes/Core/Core.h>
 
 namespace Reyes::RenderAPI {
 	using namespace Reyes;
-	class REYES_API Context {
+	class  Context {
 	public:
 		virtual void Init() = 0;
 		virtual void SwapBuffers() = 0;
